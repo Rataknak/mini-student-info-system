@@ -8,6 +8,3 @@ CREATE TABLE `users` (
   `email` varchar(100) NOT NULL,
   PRIMARY KEY  (`id`)
 );
-
-use crud;
-SELECT * FROM users;
