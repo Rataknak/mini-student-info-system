@@ -1,7 +1,6 @@
-create database test;
+create database crud;
 
-use test;
-
+use crud;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL auto_increment,
   `name` varchar(100) NOT NULL,
@@ -9,3 +8,6 @@ CREATE TABLE `users` (
   `email` varchar(100) NOT NULL,
   PRIMARY KEY  (`id`)
 );
+
+use crud;
+SELECT * FROM users;

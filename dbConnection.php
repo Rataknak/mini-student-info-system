@@ -1,8 +1,12 @@
 <?php
 $databaseHost = 'localhost';
-$databaseName = 'test';
+$databaseName = 'crud';
 $databaseUsername = 'root';
-$databasePassword = 'root';
+$databasePassword = 'Nakgaming200620';
 
-// Open a new connection to the MySQL server
-$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
+$mysqli = new mysqli($databaseHost, $databaseUsername, $databasePassword, $databaseName);
+
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
+?>
